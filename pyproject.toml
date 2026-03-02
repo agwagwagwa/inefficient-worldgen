@@ -1,0 +1,21 @@
+[project]
+name = "inefficient-worldgen"
+version = "0.1.0"
+description = "Diffusion-based Minecraft chunk generation (beautifully inefficient)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.2.0",
+    "anvil-parser>=0.9.0",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+    "tqdm>=4.66.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
