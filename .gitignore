@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Extracted world slop
+extracted_chunks/*
+training-world/*
+!training-world/.gitkeep
