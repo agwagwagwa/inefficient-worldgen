@@ -1,0 +1,11 @@
+uv run python -m inefficient_worldgen.train \
+  --chunk-dir ./extracted_chunks \
+  --ckpt-dir ./checkpoints \
+  --resume \
+  --epochs 100 \
+  --batch-size 2 \
+  --lr 1e-4 \
+  --base-channels 48 \
+  --block-embed-dim 16 \
+  --num-timesteps 200 \
+  --save-every 5
