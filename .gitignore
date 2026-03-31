@@ -13,3 +13,5 @@ wheels/
 extracted_chunks/*
 training-world/*
 !training-world/.gitkeep
+generated_world_r3/*
+checkpoints/epoch_*
